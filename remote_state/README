@@ -1,0 +1,9 @@
+https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli
+
+Requirement: To have an Azure Storage account and a blob container. This can be done either manually or using terraform.
+
+create-remote-storage.tf: terraform file to create the storage account
+
+
+terraform init
+terraform apply
