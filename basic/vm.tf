@@ -66,7 +66,7 @@ resource "azurerm_network_interface_security_group_association" "speedy" {
 }
 
 # Create (and display) an SSH key
-resource "tls_private_key" "example_ssh" {
+resource "tls_private_key" "speedy1" {
   algorithm = "RSA"
   rsa_bits  = 4096
 }
