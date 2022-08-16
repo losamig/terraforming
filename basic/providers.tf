@@ -17,5 +17,12 @@ terraform {
 }
 
 provider "azurerm" {
-  features {}
+  features {
+    key_vault {
+      purge_soft_delete_on_destroy = true
+    }
+  }
 }
+
+# https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config
+data "azurerm_client_config" "current" {}

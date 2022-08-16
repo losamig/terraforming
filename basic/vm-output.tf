@@ -4,6 +4,5 @@ output "speedy1_public_ip_address" {
 }
 
 output "speedy1_tls_private_key" {
-  value     = tls_private_key.speedy1.private_key_pem
-  sensitive = true
+  value     = local_file.speedy1_key.filename
 }
