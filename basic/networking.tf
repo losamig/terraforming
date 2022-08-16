@@ -1,4 +1,8 @@
 # Create Network Security Group and rule
+# A network security group contains security rules that allow or deny inbound network traffic to, 
+# or outbound network traffic from, several types of Azure resources. For each rule, you can specify 
+# source and destination, port, and protocol.
+# https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
 resource "azurerm_network_security_group" "speedy" {
   name                = "speedyNetworkSecurityGroup"
   location            = azurerm_resource_group.speedy.location
