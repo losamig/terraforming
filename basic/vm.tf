@@ -25,7 +25,7 @@ resource "azurerm_linux_virtual_machine" "speedy1" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = tls_private_key.example_ssh.public_key_openssh
+    public_key = tls_private_key.speedy1.public_key_openssh
   }
 
   boot_diagnostics {
@@ -65,7 +65,7 @@ resource "azurerm_network_interface_security_group_association" "speedy" {
   network_security_group_id = azurerm_network_security_group.speedy.id
 }
 
-# Create (and display) an SSH key
+# Create an SSH key
 resource "tls_private_key" "speedy1" {
   algorithm = "RSA"
   rsa_bits  = 4096
