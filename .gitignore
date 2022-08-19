@@ -1,3 +1,5 @@
+# ------- TERRAFORM STARTS ----------
+
 # Local .terraform directories
 **/.terraform/*
 
@@ -33,6 +35,17 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# ------- TERRAFORM ENDS ----------
+
+# ------- PYTHON STARTS -----------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
 #Python virtual environment
 .env
 .venv
@@ -41,3 +54,4 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# ------- PYTHON ENDS -----------
